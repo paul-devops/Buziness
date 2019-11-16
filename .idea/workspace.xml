@@ -1,18 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="925c9c2e-c0af-4f46-881c-f21bea8f9e82" name="Default Changelist" comment="" />
+    <list default="true" id="925c9c2e-c0af-4f46-881c-f21bea8f9e82" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ShopApp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ShopApp.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/SecurityController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/UserController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Article.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Article.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Categorie.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Categorie.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Client.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Client.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Commande.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Commande.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Sexe.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Sexe.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Ville.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Ville.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/UserType.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/UserRepository.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Security/UserAuthenticator.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/security/login.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/user/_delete_form.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/user/_form.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/user/edit.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/user/index.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/user/new.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/user/show.html.twig" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution>
       <executable />
     </execution>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -121,10 +149,16 @@
       <path value="$PROJECT_DIR$/vendor/psr/container" />
       <path value="$PROJECT_DIR$/vendor/psr/log" />
       <path value="$PROJECT_DIR$/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/vendor/nelmio/cors-bundle" />
+      <path value="$PROJECT_DIR$/vendor/willdurand/negotiation" />
+      <path value="$PROJECT_DIR$/vendor/api-platform/api-pack" />
+      <path value="$PROJECT_DIR$/vendor/api-platform/core" />
     </include_path>
   </component>
   <component name="ProjectId" id="1TWJH62bWVz9Mz5uWO7y8ZMPlv5" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -160,10 +194,22 @@
       <workItem from="1573569827660" duration="6963000" />
       <workItem from="1573675334932" duration="107000" />
       <workItem from="1573810427786" duration="145000" />
+      <workItem from="1573848498887" duration="18386000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

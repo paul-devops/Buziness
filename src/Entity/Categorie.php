@@ -68,7 +68,7 @@ class Categorie
         return $this;
     }
 
-    public function removePrix(Article $article): self
+    public function removeArticle(Article $article): self
     {
         if ($this->articles->contains($article)) {
             $this->articles->removeElement($article);
@@ -79,5 +79,11 @@ class Categorie
         }
 
         return $this;
+    }
+
+    public function __toString(): string
+    {
+        // TODO: Implement __toString() method.
+        return $this->libelle;
     }
 }

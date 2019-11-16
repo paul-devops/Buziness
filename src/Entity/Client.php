@@ -50,12 +50,14 @@ class Client
     private $tel;
 
     /**
-     * @ORM\Column(type="string", length=100)
+     * @ORM\ManyToOne(targetEntity="App\Entity\Ville", inversedBy="clients")
+     * @ORM\JoinColumn(nullable=false)
      */
     private $ville;
 
     /**
-     * @ORM\Column(type="string", length=5)
+     * @ORM\ManyToOne(targetEntity="App\Entity\Sexe", inversedBy="clients")
+     * @ORM\JoinColumn(nullable=false)
      */
     private $sexe;
 
@@ -151,24 +153,24 @@ class Client
         return $this;
     }
 
-    public function getVille(): ?string
+    public function getVille(): ?Ville
     {
         return $this->ville;
     }
 
-    public function setVille(string $ville): self
+    public function setVille(?Ville $ville): self
     {
         $this->ville = $ville;
 
         return $this;
     }
 
-    public function getSexe(): ?string
+    public function getSexe(): ?Sexe
     {
         return $this->sexe;
     }
 
-    public function setSexe(string $sexe): self
+    public function setSexe(?Sexe $sexe): self
     {
         $this->sexe = $sexe;
 
@@ -216,5 +218,10 @@ class Client
         }
 
         return $this;
+    }
+    public function __toString()
+    {
+        // TODO: Implement __toString() method.
+        return $this->nom . $this->prenom;
     }
 }

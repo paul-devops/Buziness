@@ -2,6 +2,7 @@
 
 namespace App\Entity;
 
+use Cassandra\Collection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -21,6 +22,11 @@ class Sexe
      */
     private $libelle;
 
+    /**
+     * @ORM\OneToMany(targetEntity="App\Entity\Client", mappedBy="sexe")
+     */
+    private $clients ;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -36,5 +42,38 @@ class Sexe
         $this->libelle = $libelle;
 
         return $this;
+    }
+
+    /**
+     * @return Collection|Client[]
+     */
+    public function getClients(): Collection
+    {
+        return $this->clients;
+    }
+
+    public function addClient(Client $client): self
+    {
+        if(!$this->clients->contains($client)){
+            $this->clients[] = $client;
+            $client->setSexe($this);
+        }
+        return $this;
+    }
+
+    public function removeClient(Client $client): self
+    {
+        if($this->clients->contains($client)){
+            $this->clients.removeElement($client);
+            if($this->client->getSexe()===$this){
+                $client->setSexe(null);
+            }
+        }
+        return $this;
+    }
+    public function __toString(): string
+    {
+        // TODO: Implement __toString() method.
+        return $this->libelle;
     }
 }

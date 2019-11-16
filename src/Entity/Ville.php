@@ -31,11 +31,50 @@ class Ville
     {
         return $this->libelle;
     }
+    /**
+     * @ORM\OneToMany(targetEntity="App\Entity\Client", mappedBy="ville")
+     */
+    private $clients;
 
     public function setLibelle(string $libelle): self
     {
         $this->libelle = $libelle;
 
         return $this;
+    }
+    /**
+     * @return Collection|Client[]
+     */
+    public function getClients(): Collection
+    {
+        return $this->clients;
+    }
+
+    public function addClient(Client $client): self
+    {
+        if (!$this->clients->contains($client)) {
+            $this->clients[] = $client;
+            $client->setVille($this);
+        }
+
+        return $this;
+    }
+
+    public function removeClient(Client $client): self
+    {
+        if ($this->clients->contains($client)) {
+            $this->clients->removeElement($client);
+            // set the owning side to null (unless already changed)
+            if ($client->getVille() === $this) {
+                $client->setVille(null);
+            }
+        }
+
+        return $this;
+    }
+    public function __toString(): string
+    {
+        // TODO: Implement __toString() method.
+        return $this->libelle;
     }
 }
